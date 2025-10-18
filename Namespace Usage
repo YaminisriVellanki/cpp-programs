@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+namespace chem {
+    int add(int a, int b) {
+        return a + b;
+    }
+}
+namespace math {
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+int main() {
+    cout << "Sum using chemistry namespace: " << chem::add(5, 10) << endl;
+    cout << "Sum using maths namespace: " << math::add(12.5, 7.5) << endl;
+    return 0;
+}
+output:
+Sum using chemistry namespace: 15
+Sum using maths namespace: 20
